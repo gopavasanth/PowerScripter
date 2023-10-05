@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAP SuccessFactors</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Include Font Awesome CSS for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Custom CSS for styling -->
+    <style>
+      /* Add your custom CSS styles here to mimic the SAP SuccessFactors design */
+      .custom-card {
+        border-radius: 10%;
+        width: 150px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        padding: 10px; /* Reduce the padding */
+        margin: 10px; /* Add margin to create space between cards */
+      }
+
+      .custom-card i {
+        font-size: 80px;
+        margin-bottom: 10px; /* Space between icon and text */
+      }
+
+      .custom-card h5 {
+        font-size: 12px; /* Reduce font size for card titles */
+        margin: 0; /* Remove margin to align text with the icon */
+      }
+
+      .header-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .good-evening-text {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem; /* Footer height */
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #354a5f"
+    >
+      <a class="navbar-brand" href="#" style="color: white">SAP SUCCESSMAP</a>
+      <div class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style="color: white"
+        >
+          Home
+        </a>
+        <div
+          class="dropdown-menu dropdown-menu-left"
+          aria-labelledby="navbarDropdown"
+        >
+          <a class="dropdown-item" href="#">Goals</a>
+          <a class="dropdown-item" href="#">Forms</a>
+          <a class="dropdown-item" href="#">Learning</a>
+          <a class="dropdown-item" href="#">Coach / Mentor Finder</a>
+          <a class="dropdown-item" href="#">Careers</a>
+          <a class="dropdown-item" href="#">Org Chart</a>
+          <a class="dropdown-item" href="#">Recruiting</a>
+          <a class="dropdown-item" href="#">People Profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </div>
+    </header>
+    <img src="wishes.jpg" alt="Wishes" class="header-image" />
+    <!-- Good Evening Text -->
+    <div class="good-evening-text">Good Evening</div>
+
+    <!-- Main Content -->
+    <div class="mt-4 mx-4">
+      <h4>Quick Actions</h4>
+      <div class="row" id="card-container">
+        <!-- Cards will be dynamically generated here -->
+      </div>
+      <h4 style="padding-top: 10px">More HR Services For You</h4>
+      <div class="">
+        <div class="row pt-4">
+          <!-- Card 1 -->
+          <div class="mx-3 mb-3">
+            <div class="card" style="width: 200px; height: 280px">
+              <img
+                src="sapties.jpg"
+                class="card-img-left"
+                alt="Image"
+                style="height: 70%; width: 100%"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sign Up to SAP TIES!</h5>
+                <p class="card-text">Meet, Explore & Create...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="mx-3 mb-3">
+            <div class="card" style="width: 200px; height: 280px">
+              <img
+                src="saptalk.jpg"
+                class="card-img-left"
+                alt="Image"
+                style="height: 70%; width: 100%"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Capture Your SAP Talk</h5>
+                <p class="card-text">with your manager View Details</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="mx-3 mb-3">
+            <div class="card" style="width: 200px; height: 280px">
+              <img
+                src="stayhealthy.jpg"
+                class="card-img-left"
+                alt="Image"
+                style="height: 70%; width: 100%"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Staying healthy and balanced</h5>
+                <p class="card-text">
+                  Access the offerings for you View Details
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="mx-3 mb-3">
+            <div class="card" style="width: 200px; height: 280px">
+              <img
+                src="fellowships.jpg"
+                class="card-img-left"
+                alt="Image"
+                style="height: 90%; width: 100%"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Explore Fellowship</h5>
+                <p class="card-text">on the Talent..</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat similar code for Card 3 and Card 4 -->
+          <!-- Card 3 -->
+
+          <!-- Card 4 -->
+        </div>
+        <div class="row">
+          <!-- Repeat the same structure for the second row -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3" id="footer">
+      <p>&copy; 2023 SAP SuccessFactors</p>
+    </footer>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include Font Awesome JS for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script>
+      // Array of card titles
+      const cardTitles = [
+        "Request Time Off",
+        "My Profile",
+        "Org Chart",
+        "My Goals",
+        "My Learning",
+        "Mobile Activation",
+        "Reminders",
+        "Favorites",
+      ];
+
+      // Array of card colors
+      const cardColors = [
+        "#aa0808", // Red
+        "#046c7a", // Blue
+        "#0057d2", // Green
+        "#6a1b9a", // Purple
+        "#e65100", // Orange
+        "#00796b", // Teal
+        "#d81b60", // Pink
+        "#fbc02d", // Yellow
+      ];
+
+      // Array of Font Awesome icons
+      const cardIcons = [
+        "fa-plane",
+        "fa-user",
+        "fa-chart-bar",
+        "fa-bullseye",
+        "fa-graduation-cap",
+        "fa-laptop",
+        "fa-bell",
+        "fa-star",
+      ];
+
+      // Get the card container
+      const cardContainer = document.getElementById("card-container");
+
+      // Generate cards dynamically
+      for (let i = 0; i < cardTitles.length; i++) {
+        const cardTitle = cardTitles[i];
+        const cardColor = cardColors[i];
+        const cardIcon = cardIcons[i];
+
+        // Create a new card element
+        const cardDiv = document.createElement("div");
+        cardDiv.className = "";
+
+        // Create the custom card
+        const customCard = document.createElement("div");
+        customCard.className = "custom-card";
+        customCard.style.backgroundColor = cardColor;
+        customCard.innerHTML = `<i class="fas ${cardIcon} fa-2x pd-1" style="margix-top: 10px"></i><h5 class="card-title">${cardTitle}</h5>`;
+
+        // Append the custom card to the card container
+        cardDiv.appendChild(customCard);
+        cardContainer.appendChild(cardDiv);
+      }
+    </script>
+  </body>
+</html>
